@@ -1,0 +1,45 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pyd
+
+# Virtual environment folders
+env/
+venv/
+.venv/
+env.bak/
+venv.bak/
+
+lib/
+bin/
+# FastAPI specific
+*.db
+*.sqlite3
+
+# Environment variable files
+.env
+
+# pytest cache
+.cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# VSCode specific (if you use VSCode)
+.vscode/
+
+# PyCharm specific (if you use PyCharm)
+.idea/
+
+# MacOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# Logs
+*.log
