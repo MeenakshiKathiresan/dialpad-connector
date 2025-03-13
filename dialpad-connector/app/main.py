@@ -83,3 +83,9 @@ async def post_call_data():
     else:
         print("Error:", response.json())
         raise HTTPException(status_code=400, detail="Failed to create Event in Salesforce")
+from fastapi import FastAPI
+from api import  events
+
+app = FastAPI()
+
+app.include_router(events.router, prefix="/events", tags=["Events"])
